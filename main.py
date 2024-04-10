@@ -98,7 +98,12 @@ bytecode = [0x00,  # idle
               0x05,  # R5
             0xB2,  # DUMP
             0xAA,  # call function
-              0x05,  # R5 (function id)
+              0x05,  # R5 (function id),
+            0xB0,  # HALT
+            0x00,  # idle
+            0x00,  # idle
+            0x00,  # idle
+            0x00,  # idle
             0x00]  # idle
 
 logging.debug(bytecode)
